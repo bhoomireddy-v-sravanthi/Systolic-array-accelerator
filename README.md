@@ -9,7 +9,7 @@ simulation and a Vivado synthesis flow.
 
 This project builds on my M.Tech thesis work on a reconfigurable systolic
 array overlay, extended here into a fully synthesizable, AXI-integrated
-accelerator with a from-scratch verification suite.
+accelerator with a  verification suite.
 
 ## Highlights
 
@@ -23,9 +23,9 @@ accelerator with a from-scratch verification suite.
   partial sums accumulate down each column
 - **AXI4-Lite integration** — memory-mapped control/data interface, ready to
   sit behind a Zynq PS-PL interconnect or any AXI4-Lite host
-- **Verification-first** — 98 passing simulation checks across the PE, the
+- **Verification** — 98 passing simulation checks across the PE, the
   full array-size sweep, and the AXI wrapper's real bus protocol, with logs
-  committed to the repo (not just claimed)
+  committed to the repo 
 - **Reproducible synthesis flow** — a `make synth` Vivado batch script that
   generates real utilization/timing/power reports for any target part
 
