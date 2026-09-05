@@ -1,0 +1,122 @@
+===== PE testbench (covers ARRAY_SIZE=1) =====
+=== pe testbench (also verifies ARRAY_SIZE=1 case) ===
+[PASS] positive result=35
+[PASS] with_acc_in result=112
+[PASS] negative_a result=-30
+[PASS] negative_w result=-30
+[PASS] both_negative result=40
+[PASS] zero_weight result=42
+[PASS] reload_weight result=18
+=== ALL PE TESTS PASSED ===
+tb/tb_pe.sv:90: $finish called at 625000 (1ps)
+
+===== systolic_array : ARRAY_SIZE=2 =====
+=== systolic_array testbench : ARRAY_SIZE=2 ===
+[PASS] identity_weights col=0 result=1
+[PASS] identity_weights col=1 result=2
+[PASS] pseudo_random col=0 result=9160
+[PASS] pseudo_random col=1 result=19826
+[PASS] signed_values col=0 result=4
+[PASS] signed_values col=1 result=1
+[PASS] reload_weights col=0 result=4
+[PASS] reload_weights col=1 result=4
+=== ALL TESTS PASSED (ARRAY_SIZE=2) ===
+tb/tb_systolic_array.sv:141: $finish called at 835000 (1ps)
+
+===== systolic_array : ARRAY_SIZE=3 =====
+=== systolic_array testbench : ARRAY_SIZE=3 ===
+[PASS] identity_weights col=0 result=1
+[PASS] identity_weights col=1 result=2
+[PASS] identity_weights col=2 result=3
+[PASS] pseudo_random col=0 result=10890
+[PASS] pseudo_random col=1 result=20888
+[PASS] pseudo_random col=2 result=37732
+[PASS] signed_values col=0 result=10
+[PASS] signed_values col=1 result=4
+[PASS] signed_values col=2 result=-2
+[PASS] reload_weights col=0 result=6
+[PASS] reload_weights col=1 result=6
+[PASS] reload_weights col=2 result=6
+=== ALL TESTS PASSED (ARRAY_SIZE=3) ===
+tb/tb_systolic_array.sv:141: $finish called at 995000 (1ps)
+
+===== systolic_array : ARRAY_SIZE=5 =====
+=== systolic_array testbench : ARRAY_SIZE=5 ===
+[PASS] identity_weights col=0 result=1
+[PASS] identity_weights col=1 result=2
+[PASS] identity_weights col=2 result=3
+[PASS] identity_weights col=3 result=4
+[PASS] identity_weights col=4 result=5
+[PASS] pseudo_random col=0 result=54845
+[PASS] pseudo_random col=1 result=50871
+[PASS] pseudo_random col=2 result=42195
+[PASS] pseudo_random col=3 result=40323
+[PASS] pseudo_random col=4 result=48312
+[PASS] signed_values col=0 result=35
+[PASS] signed_values col=1 result=20
+[PASS] signed_values col=2 result=5
+[PASS] signed_values col=3 result=-10
+[PASS] signed_values col=4 result=-25
+[PASS] reload_weights col=0 result=10
+[PASS] reload_weights col=1 result=10
+[PASS] reload_weights col=2 result=10
+[PASS] reload_weights col=3 result=10
+[PASS] reload_weights col=4 result=10
+=== ALL TESTS PASSED (ARRAY_SIZE=5) ===
+tb/tb_systolic_array.sv:141: $finish called at 1315000 (1ps)
+
+===== systolic_array : ARRAY_SIZE=10 =====
+=== systolic_array testbench : ARRAY_SIZE=10 ===
+[PASS] identity_weights col=0 result=1
+[PASS] identity_weights col=1 result=2
+[PASS] identity_weights col=2 result=3
+[PASS] identity_weights col=3 result=4
+[PASS] identity_weights col=4 result=5
+[PASS] identity_weights col=5 result=6
+[PASS] identity_weights col=6 result=7
+[PASS] identity_weights col=7 result=8
+[PASS] identity_weights col=8 result=9
+[PASS] identity_weights col=9 result=10
+[PASS] pseudo_random col=0 result=132460
+[PASS] pseudo_random col=1 result=153194
+[PASS] pseudo_random col=2 result=105451
+[PASS] pseudo_random col=3 result=103165
+[PASS] pseudo_random col=4 result=173287
+[PASS] pseudo_random col=5 result=107519
+[PASS] pseudo_random col=6 result=113666
+[PASS] pseudo_random col=7 result=115059
+[PASS] pseudo_random col=8 result=148162
+[PASS] pseudo_random col=9 result=84160
+[PASS] signed_values col=0 result=220
+[PASS] signed_values col=1 result=165
+[PASS] signed_values col=2 result=110
+[PASS] signed_values col=3 result=55
+[PASS] signed_values col=4 result=0
+[PASS] signed_values col=5 result=-55
+[PASS] signed_values col=6 result=-110
+[PASS] signed_values col=7 result=-165
+[PASS] signed_values col=8 result=-220
+[PASS] signed_values col=9 result=-275
+[PASS] reload_weights col=0 result=20
+[PASS] reload_weights col=1 result=20
+[PASS] reload_weights col=2 result=20
+[PASS] reload_weights col=3 result=20
+[PASS] reload_weights col=4 result=20
+[PASS] reload_weights col=5 result=20
+[PASS] reload_weights col=6 result=20
+[PASS] reload_weights col=7 result=20
+[PASS] reload_weights col=8 result=20
+[PASS] reload_weights col=9 result=20
+=== ALL TESTS PASSED (ARRAY_SIZE=10) ===
+tb/tb_systolic_array.sv:141: $finish called at 2115000 (1ps)
+
+===== axi_lite_systolic_wrapper : ARRAY_SIZE=4 =====
+=== AXI4-Lite systolic wrapper testbench (ARRAY_SIZE=4) ===
+[INFO] done asserted after 5 poll reads
+[PASS] col=0 result=2
+[PASS] col=1 result=6
+[PASS] col=2 result=12
+[PASS] col=3 result=20
+[PASS] ARRAY_SIZE register readback = 4
+=== ALL AXI WRAPPER TESTS PASSED ===
+tb/tb_axi_wrapper.sv:188: $finish called at 1665000 (1ps)
